@@ -48,3 +48,6 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts_styles' );
  * Disable admin bar
  */
 add_filter('show_admin_bar', '__return_false');
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
