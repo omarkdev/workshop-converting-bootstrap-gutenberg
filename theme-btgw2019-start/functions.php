@@ -51,3 +51,22 @@ add_filter('show_admin_bar', '__return_false');
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+
+// The change to filter nav_menu_css_class
+function theme_menu_css_class($classes, $item, $args) {
+    if($args->theme_location == 'primary') {
+        $classes[] = 'nav-item';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'theme_menu_css_class', 1, 3);
+
+// The change to filter nav_menu_css_class
+function theme_menu_link_attrs($atts, $item, $args) {
+    if($args->theme_location == 'primary') {
+        $atts['class'] = (isset($atts['class']) ? $atts['class'] : '').' nav-link';
+    }
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'theme_menu_link_attrs', 1, 3);
+
