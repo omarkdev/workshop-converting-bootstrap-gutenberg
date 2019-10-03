@@ -70,3 +70,26 @@ function theme_menu_link_attrs($atts, $item, $args) {
 }
 add_filter('nav_menu_link_attributes', 'theme_menu_link_attrs', 1, 3);
 
+
+/**
+ * Enqueue front end and editor JavaScript and CSS
+ */
+function theme_enqueue_block_assets() {
+    $blockPath =  get_template_directory_uri() . '/build/index.js';
+    $stylePath =  get_template_directory_uri() . '/assets/css/blocks.css';
+
+    wp_enqueue_script(
+        'btgw2019-start/block-js',
+        $blockPath,
+        [ 'wp-i18n', 'wp-edit-post', 'wp-element', 'wp-editor', 'wp-components', 'wp-data', 'wp-plugins', 'wp-edit-post', 'wp-api' ],
+        filemtime( $blockPath )
+    );
+
+    wp_enqueue_style(
+        'btgw2019-start/block-css',
+        $stylePath,
+        '',
+        filemtime( $stylePath )
+    );
+}
+add_action('enqueue_block_assets', 'theme_enqueue_block_assets');
