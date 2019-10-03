@@ -19,3 +19,13 @@ add_theme_support( 'html5', array(
     'gallery',
     'caption',
 ) );
+
+/**
+ * Include primary navigation menu
+ */
+function theme_nav_init() {
+    register_nav_menus( array(
+        'primary' => 'Menu Principal',
+    ) );
+}
+add_action( 'init', 'theme_nav_init' );
