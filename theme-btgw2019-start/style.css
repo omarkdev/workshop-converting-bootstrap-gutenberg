@@ -5,3 +5,32 @@ Description: The start theme from wordcamp workshop to use to convert a bootstra
 Version: 0.0.1
 Tags: bootstrap
 */
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#page-index {
+    height: 100vh;
+}
+
+#page-index .overlay {
+    background-color: rgba(116, 60, 140, 0.4);
+}
+
+#page-index .background {
+    background-image: url('assets/images/kym-ellis-RPT3AjdXlZc-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#page-index h1 {
+    color: #FFF;
+    font-size: 3rem;
+}
+
+#page-index p {
+    color: #FFF;
+    font-weight: 300;
+}
