@@ -1,0 +1,53 @@
+.box-with-image-covered-in-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.btn-black-transparent-bordered {
+    background-color: transparent;
+    border: 3px solid #000 !important;
+    color: #000;
+}
+
+.btn-black-transparent-bordered:hover {
+    background-color: transparent;
+    border: 3px solid #111 !important;
+    color: #111;
+}
+
+.call-action-video-play {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.call-action-video-play svg {
+    width: 125px;
+    opacity: 0.9;
+    cursor: pointer;
+    height: 100%;
+}
+
+.title-underscore:before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: purple;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.icon-bordered-rounded{
+    border: 1px solid purple;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: purple;
+    margin: 0 auto;
+}
