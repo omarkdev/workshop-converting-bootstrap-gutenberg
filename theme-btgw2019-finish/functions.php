@@ -93,3 +93,8 @@ function theme_enqueue_block_assets() {
     );
 }
 add_action('enqueue_block_assets', 'theme_enqueue_block_assets');
+
+function admin_style() {
+    wp_enqueue_style('admin-style', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
