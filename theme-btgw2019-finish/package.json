@@ -1,0 +1,19 @@
+{
+  "name": "theme-btgw2019-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Marcos Felipe <omarkdev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/block-editor": "^3.2.1",
+    "@wordpress/blocks": "^6.7.1",
+    "@wordpress/components": "^8.3.1",
+    "@wordpress/element": "^2.8.1",
+    "@wordpress/scripts": "5.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+/*
+Theme Name: Finished - Bootstrap to Gutenberg - WorkShop WordCamp 2019
+Author: Marcos Felipe <omakrkdev@gmail.com>
+Description: The finish theme from wordcamp workshop to use to convert a bootstrap to gutenberg
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#page-index {
+    height: 100vh;
+}
+
+#page-index .overlay {
+    background-color: rgba(116, 60, 140, 0.4);
+}
+
+#page-index .background {
+    background-image: url('assets/images/kym-ellis-RPT3AjdXlZc-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#page-index h1 {
+    color: #FFF;
+    font-size: 3rem;
+}
+
+#page-index p {
+    color: #FFF;
+    font-weight: 300;
+}
+
+.font-worksans {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.btn {
+    border-radius: 0 !important;
+}
